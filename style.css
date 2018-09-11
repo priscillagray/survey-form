@@ -1,0 +1,76 @@
+body {
+    background:	rgb(0, 191, 255);
+    font-family: "Lora", "Arial";
+    max-width: 100%;
+    height: auto;
+}
+
+#form-background {
+    background: rgb(243, 243, 243);
+   
+    margin: 5px 25%;
+}
+#title {
+    text-align: center;
+  }
+
+  #description {
+    text-align: center;
+    padding-top: 4px;
+  }
+  
+  .required-field {
+    text-align: center;
+    color: red;
+  }
+
+h1 {
+    font-family: "Lora", "Arial";
+    font-size: 45px;
+    padding-top: 10px;
+}
+
+#survey-form {
+   text-align: center;
+}
+
+#name, #email, #number, #textarea {
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+}
+#name-label, #email-label, #number-label {
+  font-weight: bold;
+}
+
+.label {
+    padding: 5px;
+    font-weight: bold;
+}
+
+.rating {
+    max-width: 100%;
+}
+.radio, .checkbox {
+    position: relative;
+    left: -50px;
+    display: block;
+    padding-bottom: 10px;
+    max-width: 100%;
+  }
+  
+  #submit {
+    background-color: rgb(0, 191, 255);
+    border-radius: 4px;
+    color: white;
+    height: 30px;
+    width: 100px;
+    margin: 10px;
+    border: 0px solid;
+  }
+
+  #submit:hover{
+    transform: translateY(2px);
+    opacity: 0.6;
+    transition: 0.3s;
+  }

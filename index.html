@@ -1,0 +1,83 @@
+<!Doctype html>
+<html>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+</head>
+
+<body>
+<h1 id="title">Survey Form</h1>
+    <div id="form-background">
+    <p id="description">Let us know how to make your experience even better!</p>
+    <p class="required-field">* required field </p>
+
+<form id="survey-form">
+  <div class="label">
+    <label id="name-label">
+     Name:</label>
+  </div>
+    <span class="required-field"> *</span>
+    <input type="text" id="name" placeholder="Full Name..."required>
+  <div class="label">
+    <label id="email-label">Email: </label>
+  </div>
+     <span class="required-field"> *</span>
+    <input type="email" id="email" placeholder="Email..." required>
+  <div class="label">
+    <label id="number-label">Age:</label>
+  </div>
+    <span class="required-field"> *</span>
+     <input type="number" id="number" placeholder="Age" min=10 max=99 required>
+  <br>
+  <div class="label">
+  <label> Gender: </label> 
+</div>
+ <select id="dropdown">
+    <option disabled selected value>Choose One </option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="no-answer">No answer</option>
+</select>
+    
+    <div class="rating">
+            <h4> Overall Experience: </h4>
+     <label class="radio-btn">
+            <input type="radio" name="excellent" value="excellent">Excellent
+          </label>
+          <label class="radio-btn">
+            <input type="radio" name="good" value="good">Good
+          </label>
+          <label class="radio-btn">
+            <input type="radio" name="average" value="average">Average
+          </label> 
+          <label class="radio-btn">
+                <input type="radio" name="Dissatisfied" value="Dissatisfied">Dissatisfied
+              </label>
+
+        </div>
+    
+    <div class="checkboxes">
+        <h4> Instruments you play (check all that apply): </h4>
+            <input type="checkbox" value="guitar">Guitar
+            <input type="checkbox" value="Piano"> Piano
+            <input type="checkbox" value="Drums"> Drums
+            <input type= "checkbox" value="Bass"> Bass
+            <input type= "checkbox" value="Voice"> Voice
+            <input type= "checkbox" value="Other">Other <textarea id="textarea" name="otherInstrument" rows="1" cols="15"></textarea>
+     </div>
+
+<br>
+  <h4 class="comment">Anything else you would like us to know?</h4>
+  <textarea  id="textarea" name="comment" rows="3" cols="30"></textarea>
+  <br><br>
+  <button type="submit" id="submit">Submit</button>
+
+    </form>
+</div>
+
+<script src="script.js"> </script>
+    
+</body>
+ </html>
